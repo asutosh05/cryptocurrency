@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'movies/app.css'%}" />
+        <link rel="stylesheet" href="{% static 'coins/app.css'%}" />
 	</header>
 	<body>
 		<div class="wrapper">
@@ -31,16 +31,41 @@
 								</div>
                         	</form>
                         </div>
-                        <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modal-create">Create</button>
 					</div>
 				</div>
 			</nav>
+		</div>
+		<div class="outer-container-fluid global-stats desktop hidden-xs">
+			<div class="container global-stats desktop">
+					<div class="row">
+						<div class="col-sm-6">
+						Total Volume 24h: {{summery.total_24h_volume_inr}} /
+						Market Cap:Rs {{summery.total_market_cap_inr}}
+						</div>
+						<div class="col-sm-6">
+						BTC Dominance: {{summery.bitcoin_percentage_of_market_cap}}
+						
+						</div>
+					</div>
+				
+			</div>
+		</div>
+		<!--<div class="container-fluid">-->
+		<!--   {% for item in coins %}-->
+		<!--   		<table class="table table-condensed">-->
+		<!--   			<tr>-->
+		<!--   				<td>{{item.id}}</td>-->
+		<!--   			</tr>-->
+		<!--   		</table>-->
+		<!--   {% endfor %}-->
+		<!--</div>-->
+		<din>
+			{{ summery }}
+		</din>
 		<!--JAVASCRIPT-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="{% static 'movies/app.js' %}"></script>
+        <script src="{% static 'coins/app.js' %}"></script>
     </body>
-</html>
-
 </html>
