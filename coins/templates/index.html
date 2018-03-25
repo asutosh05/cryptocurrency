@@ -22,33 +22,14 @@
 			<nav class="nav">
 				<div class="container">
 					<div class="nav__menu">
-						<a href="/" class="nav__header">Coin Guide</a>
-                        <div class="col-md-5 pull-right">
-                        	<form action="" class="form-inline" name="search">
-								<div class="form-group">
-									<input type="text" name="query" class="form-control" valuse="{{request.GET.query}}" />
-                                    <input type="submit" class="btn btn-primary" value="Search" />
-								</div>
-                        	</form>
-                        </div>
+						<a href="/" class="nav__header">NZT Token</a>
+                       
 					</div>
 				</div>
 			</nav>
 		</div>
 		<div class="outer-container-fluid global-stats desktop hidden-xs">
-			<div class="container global-stats desktop">
-					<div class="row">
-						<div class="col-sm-6">
-						Total Volume 24h: {{summery.total_24h_volume_inr}} /
-						Market Cap:Rs {{summery.total_market_cap_inr}}
-						</div>
-						<div class="col-sm-6">
-						BTC Dominance: {{summery.bitcoin_percentage_of_market_cap}}
-						
-						</div>
-					</div>
-				
-			</div>
+			
 		</div>
 		<!--<div class="container-fluid">-->
 		<!--   {% for item in coins %}-->
@@ -59,9 +40,7 @@
 		<!--   		</table>-->
 		<!--   {% endfor %}-->
 		<!--</div>-->
-		<din>
-			{{ summery }}
-		</din>
+		
 		<!--JAVASCRIPT-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.min.js"></script>
